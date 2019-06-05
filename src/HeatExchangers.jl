@@ -1,12 +1,8 @@
-
-include("pipes.jl")
-include("streams.jl")
-include("multiparameter_eos.jl")
-
 ################################################################################
-# hx_core.jl
+# HeatExchangers.jl
 # v 0.5 by Richard Fitzhugh
-# Last edited on 10/17/2017
+# Previous version edited on 10/17/2017
+# Currently in revision for use in Julia 1.0
 #
 # This file contains functions for overall heat exchanger analysis using the
 # methods found in Fundamentals of Heat and Mass Transfer by Incropera and
@@ -21,10 +17,6 @@ include("multiparameter_eos.jl")
 # exponential rather than logarithmic functions, so they don't start returning
 # NaNs if a numerical solver happens to guess negative temperatures or the like.
 ################################################################################
-
-using streams
-using subst
-using NLsolve
 
 
 
